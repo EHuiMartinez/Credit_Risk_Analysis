@@ -3,7 +3,8 @@
 ## Overview of the analysis: 
 Explain the purpose of this analysis.
 
-Compare two oversampling algorithms to determine which algorithm results in the best performance. You will oversample the data using the naive random oversampling algorithm and the SMOTE algorithm. 
+Compare ressampled 
+two oversampling algorithms to determine which algorithm results in the best performance. You will oversample the data using the naive random oversampling algorithm and the SMOTE algorithm. 
 
 Compare two ensemble algorithms to determine which algorithm results in the best performance. You will train a Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier . 
 
@@ -11,20 +12,29 @@ Compare two ensemble algorithms to determine which algorithm results in the best
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
 
 
--- Oversampling
+-- Resampling
 
+### Naive Random Oversampling
 ![NaiveRandomOverSampling.png](/Resources/NaiveRandomOverSampling.png)
 
+### SMOTE Oversampling
 ![SMOTEOverSampling.png](/Resources/SMOTEOverSampling.png)
 
+### Undersampling
 ![UnderSampling.png](/Resources/UnderSampling.png)
 
+### SMOTEENN - Combination (Over and Under) Sampling
 ![ComboOverUnderSampling.png](/Resources/ComboOverUnderSampling.png)
 
 -- Ensemble
 
+### Balanced Random Forest Classifier
 ![BalancedRandomForestClassifier.png](/Resources/BalancedRandomForestClassifier.png)
 
+Features ranked - Top & Bottom 10
+![Features_ranked.png](/Resources/Features_ranked.png)
+
+### Easy Ensemble AdaBoost Classifier
 ![EasyEnsembleAdaBoostClassifier](/Resources/EasyEnsembleAdaBoostClassifier.png)
 
 
