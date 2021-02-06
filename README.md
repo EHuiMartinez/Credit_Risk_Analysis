@@ -9,36 +9,46 @@ Each of the resampled models produced a balanced accuracy score and a classifica
 ### Resampling 
 
 #### Naive Random Oversampling
-* **Balanced accuracy score: 66%**
-* **Precision scores:** high risk= 1%; low risk = 100%  **Avg = 99%**
-* **Recall scores:** high risk = 68%; low risk = 64% **Avg = 64%**
+* Balanced accuracy score: 66%
+* Precision scores: high risk= 1%; low risk = 100%; Avg = 99%
+* Recall scores: high risk = 68%; low risk = 64%; Avg = 64%
+* The accuracy is low at 66%.  Even though the average precision score is high in 99%, it is only effective for low risk predictions (100%), not for high risk (1%). The recall or sensitivity is also low for both high and low risk groups with an average of 64%.
+
 ![NaiveRandomOverSampling.png](/Resources/NaiveRandomOverSampling.png)
 
 #### SMOTE Oversampling
 * Balanced accuracy score: 65%
-* Precision scores: high risk = 1%; low risk = 100%   **Avg = 99%**
-* Recall scores: high risk = 63%; low risk = 67%  Avg = 66%
+* Precision scores: high risk = 1%; low risk = 100%; Avg = 99%
+* Recall scores: high risk = 63%; low risk = 67%; Avg = 66%
+* The accuracy is low at 65%.  Even though the average precision score is high in 99%, it is only effective for low risk predictions (100%), not for high risk (1%). The recall or sensitivity is also low for both high and low risk groups with an average of 66%.
+
 ![SMOTEOverSampling.png](/Resources/SMOTEOverSampling.png)
 
 #### Undersampling
 * Balanced accuracy score: 53%
-* Precision scores: high risk = 1%; low risk = 100%  Avg = 99%
-* Recall scores: high risk = 64%; low risk = 41%  Avg = 42%
+* Precision scores: high risk = 1%; low risk = 100%; Avg = 99%
+* Recall scores: high risk = 64%; low risk = 41%; Avg = 42%
+* The accuracy is lowest at 53%.  Even though the average precision score is high in 99%, it is only effective for low risk predictions (100%), not for high risk (1%). The recall or sensitivity is also low for both high and low risk groups with the lowest average of 42%.
+
 ![UnderSampling.png](/Resources/UnderSampling.png)
 
 #### SMOTEENN - Combination (Over and Under) Sampling
 * Balanced accuracy score: 66%
-* Precision scores: high risk = 1%; low risk = 100%  Avg = 99%
-* Recall scores: high risk = 74%; low risk = 59% Avg = 59%
+* Precision scores: high risk = 1%; low risk = 100%; Avg = 99%
+* Recall scores: high risk = 74%; low risk = 59; Avg = 59%
+* The accuracy is low at 66%.  Even though the average precision score is high in 99%, it is only effective for low risk predictions (100%), not for high risk (1%). The recall or sensitivity is also low for both high and low risk groups with an average of 59%.
+
 ![ComboOverUnderSampling.png](/Resources/ComboOverUnderSampling.png)
 
 ### Ensemble
 
 #### Balanced Random Forest Classifier
 * Balanced accuracy score: 79%
-* Precision scores: high risk = 3%; low risk = 100%  Avg = 99%
-* Recall scores: high risk = 70%; low risk = 87% Avg = 89%
-* Features ranked:
+* Precision scores: high risk = 3%; low risk = 100%; Avg = 99%
+* Recall scores: high risk = 70%; low risk = 87%; Avg = 87%
+* Features ranked: The top 10 features that contributes to the predictions vs the bottom features - there are 11 features that have no affect on the predictions.
+* The accuracy is high at 79%.  Even though the average precision score is high in 99%, it is only effective for low risk predictions (100%), not for high risk (3%). The recall or sensitivity is high with the high risk group at 70%, the low risk group at 87% and an average of 87%.
+
 ![BalancedRandomForestClassifier.png](/Resources/BalancedRandomForestClassifier.png)
 
 *Features ranked - Top & Bottom 10*
@@ -46,8 +56,11 @@ Each of the resampled models produced a balanced accuracy score and a classifica
 
 #### Easy Ensemble AdaBoost Classifier
 * Balanced accuracy score: 93%
-* Precision scores: high risk = 9%; low risk = 99% Avg = 99%
-* Recall scores: high risk = 92%; low risk = 94% Avg = 94%
+* Precision scores: high risk = 9%; low risk = 100%; Avg = 99%
+* Recall scores: high risk = 92%; low risk = 94%; Avg = 94%
+* The accuracy is highest at 93%.  Even though the average precision score is high in 99%, it is only effective for low risk predictions (100%), not for high risk (9%). The recall or sensitivity is high with the high risk group at 92%, the low risk group at 94% and an average of 94%.
+
+
 ![EasyEnsembleAdaBoostClassifier](/Resources/EasyEnsembleAdaBoostClassifier.png)
 
 
